@@ -51,7 +51,7 @@ AIDL
 
 ​		此处继续调用到sendAt2Bt方法，方法内又调用SerialPoreUtils文件中的sendSerialPort方法最终对字符串进行解析。
 
-![image-20200709173301265](..\img\aidl.png)
+![image-20200709173301265](\img\aidl.png)
 
 *此处代码将解析完的字符串发送到另一个方法中进行调用callback方法并传入一些信息*
 
