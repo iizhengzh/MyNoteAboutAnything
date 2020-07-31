@@ -1,6 +1,4 @@
 <!-- docs/_sidebar.md --> 
-* 
-* 
 * JAVA相关
   * [基础知识](/JAVA/tips.md)
   * [JVM](/JAVA/tips.md)
@@ -20,3 +18,6 @@
 * 其他相关
   * [git 学习](/其他/git.md)
   * [回调](/其他/回调.md)
+  * [README.md](/README.md)  
+  
+  

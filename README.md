@@ -1,3 +1,4 @@
-# Headline
+# 指南
 
-> An awesome project.
+> 随时记录学习心得
+> 可以让做笔记变得有趣

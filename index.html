@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>笔记本</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,14 +10,42 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
     window.$docsify = {
+	  name: 'HOME',
+	  repo: 'https://github.com/iizhengzh/MyNoteAboutAnything',
+	  maxLevel: 5,//最大支持渲染的标题层级
+	//全文搜索
+      search: {
+        //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto',
+        placeholder: '这个搜索还不能用',
+        noData: '未找到结果',
+        // 搜索标题的最大程级, 1 - 6
+        depth: 2,
+      },
+	  auto2top: true,//切换页面后是否自动跳转到页面顶部
+	  homepage: 'README.md',
 	  coverpage: true, //开启封面
-	  coverpage: '封面.md', //指定封面文件
+	  onlyCover: true,
 	  loadSidebar: true,//开启侧边栏
+	  loadNavbar: true,//开启导航栏
 	  subMaxLevel: 2 //设置侧片栏最大层级,最大6级
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+ <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!--Java代码高亮-->
+  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+  <!--全文搜索,直接用官方提供的无法生效-->
+  <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+  <!-- 复制代码到剪贴板 -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- 图片缩放 -->
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  
+  
 </body>
 </html>
